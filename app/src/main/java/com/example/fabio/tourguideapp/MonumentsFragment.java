@@ -37,8 +37,8 @@ public class MonumentsFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_monuments, container, false);
 
-        attractions.add(new Attraction("Sagrada Familia", "A beautiful church in Barcelona." , "Carrer de Mallorca, 401, 08013 Barcelona"));
-        attractions.add(new Attraction("The Casa Batllo", "Is the most original and dreamlike house of the architect Antoni Gaudí in Barcelona." , "Passeig de Gràcia, 43, 08007 Barcelona"));
+        attractions.add(new Attraction("Sagrada Familia", "A beautiful church in Barcelona." , "Carrer de Mallorca, 401, 08013 Barcelona",0));
+        attractions.add(new Attraction("The Casa Batllo", "Is the most original and dreamlike house of the architect Antoni Gaudí in Barcelona." , "Passeig de Gràcia, 43, 08007 Barcelona",0));
 
 
         attractionAdapter = new AttractionAdapter(getActivity(), attractions);
