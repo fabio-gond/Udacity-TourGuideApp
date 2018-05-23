@@ -21,10 +21,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         TabLayout tabLayout = findViewById(R.id.main_tabLayout);
-        tabLayout.addTab(tabLayout.newTab().setText("Monuments"));
-        tabLayout.addTab(tabLayout.newTab().setText("Restaurants"));
-        tabLayout.addTab(tabLayout.newTab().setText("Hotels"));
-        tabLayout.addTab(tabLayout.newTab().setText("Clubs"));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ic_monument));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ic_restaurant));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ic_hotel));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ic_club));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
         viewPager = findViewById(R.id.main_viewPager);

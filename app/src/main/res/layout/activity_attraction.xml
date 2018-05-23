@@ -6,25 +6,57 @@
     android:orientation="vertical"
     tools:context=".AttractionActivity">
 
-    <TextView
-        android:id="@+id/attraction_name"
+    <ImageView
+        android:id="@+id/attraction_photo"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"/>
+        android:layout_height="0dp"
+        android:layout_weight="2"/>
 
-    <TextView
-        android:id="@+id/attraction_description"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"/>
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:padding="25dp">
 
-    <Button
-        android:text="See on Map"
-        android:drawableLeft="@drawable/ic_map"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:drawablePadding="5dp"
-        android:layout_gravity="center"
-        android:onClick="openMap"/>
+        <TextView
+            android:text="Example name"
+            android:id="@+id/attraction_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_alignParentTop="true"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:text="Example Description"
+            android:id="@+id/attraction_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_below="@+id/attraction_name"
+            android:layout_marginTop="15dp"
+            />
+
+        <TextView
+            android:text="Example Address"
+            android:id="@+id/attraction_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_below="@+id/attraction_description"
+            android:layout_marginTop="15dp"
+            />
+
+        <Button
+            android:text="See on Map"
+            android:drawableLeft="@drawable/ic_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:layout_gravity="center"
+            android:onClick="openMap"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
 
 </LinearLayout>
