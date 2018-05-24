@@ -34,16 +34,41 @@ public class MonumentsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+
         View view = inflater.inflate(R.layout.fragment_monuments, container, false);
 
-        attractions.add(new Attraction(
-                "Sagrada Familia",
-                "A beautiful church in Barcelona." ,
-                "Carrer de Mallorca, 401, 08013 Barcelona",
-                0));
 
-        attractions.add(new Attraction("The Casa Batllo", "Is the most original and dreamlike house of the architect Antoni Gaudí in Barcelona." , "Passeig de Gràcia, 43, 08007 Barcelona",0));
+        attractions.add(new Attraction(
+                "Stedelijk Museum",
+                "A beautiful Museum." ,
+                "Museumplein 10, 1071 DJ, Amsterdam",
+                api.getImgResourceId("stedelijk_museum" , getResources() , getActivity())
+        ));
+        attractions.add(new Attraction(
+                "Van Gogh Museum",
+                "This museum is dedicated to Van Gogh." ,
+                "Museumplein 6, 1071 DJ, Amsterdam",
+                api.getImgResourceId("van_gogh_museum" , getResources() , getActivity())
+        ));
+        attractions.add(new Attraction(
+                "Anna Frank House",
+                "In this house lived Anna Frank." ,
+                "Prinsengracht 263-267, 1016 GV, Amsterdam",
+                api.getImgResourceId("anne_frank_house" , getResources() , getActivity())
+        ));
+        attractions.add(new Attraction(
+                "Rembrandt House",
+                "The house of the famous artist." ,
+                "Jodenbreestraat 4, 1011 NK, Amsterdam",
+                api.getImgResourceId("rembrandt_house" , getResources() , getActivity())
+        ));
+        attractions.add(new Attraction(
+                "Rijksmuseum",
+                "A big museum in Amsterdam." ,
+                "Museumstraat 1, 1071 XX, Amsterdam",
+                api.getImgResourceId("rijksmuseum" , getResources() , getActivity())
+        ));
+
 
 
         attractionAdapter = new AttractionAdapter(getActivity(), attractions);
@@ -58,6 +83,7 @@ public class MonumentsFragment extends Fragment {
                 intent.putExtra("name", attractions.get(i).getName());
                 intent.putExtra("description", attractions.get(i).getDescription());
                 intent.putExtra("address", attractions.get(i).getAddress());
+                intent.putExtra("photo", attractions.get(i).getImgResourceId());
 
                 // Start the new activity
                 startActivity(intent);
