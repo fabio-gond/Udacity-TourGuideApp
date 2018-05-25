@@ -24,9 +24,9 @@ public class AttractionAdapter extends ArrayAdapter<Attraction> {
         }
 
         Attraction currentAttraction = getItem(position);
-        TextView name= (TextView) listItemView.findViewById(R.id.attractionItem_name);
+        TextView name= listItemView.findViewById(R.id.attractionItem_name);
         name.setText(currentAttraction.getName());
-        TextView description= (TextView) listItemView.findViewById(R.id.attractionItem_description);
+        TextView description= listItemView.findViewById(R.id.attractionItem_description);
         description.setText(currentAttraction.getDescription());
         return listItemView;
     }

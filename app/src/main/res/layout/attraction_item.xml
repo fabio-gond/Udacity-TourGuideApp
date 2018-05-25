@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
+    android:padding="@dimen/midPadding"
+    android:background="@drawable/material_button"
     android:elevation="2dp">
     
     <LinearLayout
@@ -16,12 +17,14 @@
             android:text="Title test"
             android:textStyle="bold"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/item_title"/>
         <TextView
             android:id="@+id/attractionItem_description"
             android:text="Test of the address."
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/item_subtitle"/>
     </LinearLayout>
 
 </LinearLayout>
