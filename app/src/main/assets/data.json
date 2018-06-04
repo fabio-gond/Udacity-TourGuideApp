@@ -1,0 +1,112 @@
+{
+  "monuments": [
+    {
+      "name": "Stedelijk Museum",
+      "description": "A beautiful Museum",
+      "address": "Museumplein 10, 1071 DJ, Amsterdam",
+      "photo": "stedelijk_museum"
+    },
+    {
+      "name": "Van Gogh Museum",
+      "description": "This museum is dedicated to Van Gogh",
+      "address": "Museumplein 6, 1071 DJ, Amsterdam",
+      "photo": "van_gogh_museum"
+    },
+    {
+      "name": "Anna Frank House",
+      "description": "In this house lived Anna Frank",
+      "address": "Prinsengracht 263-267, 1016 GV, Amsterdam",
+      "photo": "anne_frank_house"
+    },
+    {
+      "name": "Rembrandt House",
+      "description": "The house of the famous artist",
+      "address": "Jodenbreestraat 4, 1011 NK, Amsterdam",
+      "photo": "rembrandt_house"
+    },
+    {
+      "name": "Rijksmuseum",
+      "description": "A big museum in Amsterdam",
+      "address": "Museumstraat 1, 1071 XX, Amsterdam",
+      "photo": "rijksmuseum"
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Waldorf Astoria Amsterdam",
+      "description": "Beautiful hotel on the canal ,",
+      "address": "Herengracht 542-556, 1017 CG",
+      "photo": "hotel1"
+    },
+    {
+      "name": "Luxury Suites Amsterdam",
+      "description": "Elegant suites in a luxury hotels with bar",
+      "address": "Oudeschans 75, 1011 KW",
+      "photo": "hotel2"
+    },
+    {
+      "name": "XO Hotels Couture",
+      "description": "Modern rooms in a luxury hotel on multiple floors",
+      "address": "Delflandlaan 15, 1062 EA",
+      "photo": "hotel3"
+    },
+    {
+      "name": "Hotel Sofitel Legend the Grand Amsterdam",
+      "description": "Luxury hotel in the center of Amsterdam",
+      "address": "Oudezijds Voorburgwal 197, 1012 EX",
+      "photo": "hotel4"
+    }
+  ],
+  "clubs": [
+    {
+      "name": "De Club Up",
+      "description": "A night club near the center of the city",
+      "address": "Korte Leidsedwarsstraat 26-1, 1017 RC",
+      "photo": "club1"
+    },
+    {
+      "name": "Winston Kingdom Club",
+      "description": "A night club near the center of the city",
+      "address": "Warmoesstraat 131, 1012 JA",
+      "photo": "club2"
+    },
+    {
+      "name": "Sugar Factory",
+      "description": "A night club near the center of the city",
+      "address": "Lijnbaansgracht 238, 1017 PH",
+      "photo": "club3"
+    },
+    {
+      "name": "AIR Amsterdam",
+      "description": "A night club near the center of the city",
+      "address": "Amstelstraat 16, 1017 DA",
+      "photo": "club4"
+    }
+  ],
+  "restaurants": [
+    {
+      "name": "Ciel Bleu Restaurant",
+      "description": "A modern restaurant near the canal",
+      "address": "Ferdinand Bolstraat 333, 1072 LH",
+      "photo": "restaurant1"
+    },
+    {
+      "name": "Restaurant La Rive",
+      "description": "A modern restaurant near the canal",
+      "address": "Professor Tulpplein 1, 1018 GX",
+      "photo": "restaurant2"
+    },
+    {
+      "name": "Blue Pepper",
+      "description": "A modern restaurant near the canal",
+      "address": "Nassaukade 366, 1054 AB",
+      "photo": "restaurant3"
+    },
+    {
+      "name": "Restaurant Daalder",
+      "description": "A modern restaurant near the canal",
+      "address": "Lindengracht 90, 1015 KK",
+      "photo": "restaurant4"
+    }
+  ]
+}

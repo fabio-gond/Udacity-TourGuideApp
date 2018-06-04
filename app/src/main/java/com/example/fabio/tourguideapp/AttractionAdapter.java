@@ -1,12 +1,14 @@
 package com.example.fabio.tourguideapp;
 
 import android.content.Context;
+import android.media.Image;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -26,6 +28,8 @@ public class AttractionAdapter extends ArrayAdapter<Attraction> {
         Attraction currentAttraction = getItem(position);
         TextView name= listItemView.findViewById(R.id.attractionItem_name);
         name.setText(currentAttraction.getName());
+        ImageView photo = listItemView.findViewById(R.id.attractionItem_photo);
+        photo.setImageResource(currentAttraction.getImgResourceId());
         TextView description= listItemView.findViewById(R.id.attractionItem_description);
         description.setText(currentAttraction.getDescription());
         return listItemView;

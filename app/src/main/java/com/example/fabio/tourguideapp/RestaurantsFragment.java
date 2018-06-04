@@ -34,30 +34,7 @@ public class RestaurantsFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_restaurants, container, false);
 
-        attractions.add(new Attraction(
-                "Ciel Bleu Restaurant",
-                "A modern restaurant near the canal." ,
-                "Ferdinand Bolstraat 333, 1072 LH",
-                api.getImgResourceId("restaurant1" , getResources() , getActivity())
-        ));
-        attractions.add(new Attraction(
-                "Restaurant La Rive",
-                "A modern restaurant near the canal." ,
-                "Professor Tulpplein 1, 1018 GX",
-                api.getImgResourceId("restaurant2" , getResources() , getActivity())
-        ));
-        attractions.add(new Attraction(
-                "Blue Pepper",
-                "A modern restaurant near the canal." ,
-                "Nassaukade 366, 1054 AB",
-                api.getImgResourceId("restaurant3" , getResources() , getActivity())
-        ));
-        attractions.add(new Attraction(
-                "Restaurant Daalder",
-                "A modern restaurant near the canal." ,
-                "Lindengracht 90, 1015 KK",
-                api.getImgResourceId("restaurant4" , getResources() , getActivity())
-        ));
+        attractions = QueryUtils.extractAttractions("restaurants" , getResources() , getActivity());
 
         attractionAdapter = new AttractionAdapter(getActivity(), attractions);
         listView = view.findViewById(R.id.restaurants_list);

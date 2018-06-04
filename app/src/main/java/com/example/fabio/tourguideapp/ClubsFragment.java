@@ -34,30 +34,7 @@ public class ClubsFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_clubs, container, false);
 
-        attractions.add(new Attraction(
-                "De Club Up",
-                "A night club near the center of the city." ,
-                "Korte Leidsedwarsstraat 26-1, 1017 RC",
-                api.getImgResourceId("club1" , getResources() , getActivity())
-        ));
-        attractions.add(new Attraction(
-                "Winston Kingdom Club",
-                "A night club near the center of the city." ,
-                "Warmoesstraat 131, 1012 JA",
-                api.getImgResourceId("club2" , getResources() , getActivity())
-        ));
-        attractions.add(new Attraction(
-                "Sugar Factory",
-                "A night club near the center of the city." ,
-                "Lijnbaansgracht 238, 1017 PH",
-                api.getImgResourceId("club3" , getResources() , getActivity())
-        ));
-        attractions.add(new Attraction(
-                "AIR Amsterdam",
-                "A night club near the center of the city." ,
-                "Amstelstraat 16, 1017 DA",
-                api.getImgResourceId("club4" , getResources() , getActivity())
-        ));
+        attractions = QueryUtils.extractAttractions("clubs" , getResources() , getActivity());
 
         attractionAdapter = new AttractionAdapter(getActivity(), attractions);
         listView = view.findViewById(R.id.clubs_list);

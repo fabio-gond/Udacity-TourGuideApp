@@ -3,7 +3,11 @@ package com.example.fabio.tourguideapp;
 import android.app.Activity;
 import android.content.res.Resources;
 
-public class api {
+public class Api {
+
+    Api() {
+
+    }
 
     /**
      * Return the image resource id from the image name

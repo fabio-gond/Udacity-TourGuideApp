@@ -9,10 +9,6 @@ public class MainActivity extends AppCompatActivity {
     private int currentTab = 0;
     private ViewPager viewPager;
     private PagerAdapter adapter;
-    final int MONUMENTS_TAB = 0;
-    final int RESTAURANTS_TAB = 1;
-    final int HOTELS_TAB = 2;
-    final int CLUBS_TAB = 3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
